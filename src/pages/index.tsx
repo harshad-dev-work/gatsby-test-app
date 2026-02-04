@@ -1,5 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import Layout from "../components/layout"
+import { StaticImage } from 'gatsby-plugin-image'
 
 const pageStyles = {
   color: "#232129",
@@ -139,6 +141,9 @@ const links = [
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
+      <Layout pageTitle="Home Page">
+        <p>I'm making this by following the Gatsby Tutorial.</p>
+      </Layout>
       <h1 style={headingStyles}>
         Congratulations
         <br />
@@ -146,6 +151,10 @@ const IndexPage: React.FC<PageProps> = () => {
           — you just made a Gatsby site! 🎉🎉🎉
         </span>
       </h1>
+      <StaticImage
+        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
+        src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
+      />
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this
         page update in real-time. 😎
