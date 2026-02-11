@@ -205,8 +205,16 @@
 
 // src/pages/index.tsx
 import * as React from "react"
+import ContactForm from "../components/ContactForm"
 
 export default function Home() {
-  return <h1>Hello Gatsby</h1>
+  return(
+
+    // <h1>Hello Gatsby</h1>
+    <div className="container">
+       <ContactForm/>
+    </div>
+  )
+
 }
 
