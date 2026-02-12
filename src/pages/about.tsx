@@ -5,6 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Greeting from '../components/Greeting'
 
 
+
 const about = () => {
   console
   return (
